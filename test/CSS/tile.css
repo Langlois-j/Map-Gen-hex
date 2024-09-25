@@ -1,0 +1,50 @@
+/* variable communes*/
+
+
+:root {
+    --Hex-taille-PX: 25PX;
+    --Hex-hauteur-PX: calc(Var(--Hex-taille-PX) * 0.86);
+    --Hex-marge-left-PX: calc(Var(--Hex-taille-PX) / -4);
+    --Hex-marge-top-PX: calc(var(--Hex-hauteur-PX) / 2);
+    --R: 10;
+    --G: 0;
+    --B: 255;
+    --T: 0.3;
+}
+
+Hex-Ligne {
+    display: inline;
+    margin-top: 1px;
+}
+
+Hex-Ligne:first-child {
+    margin-top: 0Px;
+}
+
+/*
+Hex-Ligne {
+  display: flex;
+  margin-top: calc(var(--Hex-marge-top-PX) * -1);
+}
+
+Hex-Ligne:first-child {
+  margin-top: 0Px;
+}
+Hex-tuile:nth-child(2n) {margin-top: VAR(  --Hex-marge-top-PX);}
+Hex-tuile:first-child {margin-left: 0px;}
+Hex-tuile {width: Var(--Hex-taille-PX);height: Var(--Hex-hauteur-PX); margin-left: var(--Hex-marge-left-PX);}
+ svg {overflow:visible;}*/
+.hex::before {
+    content: "\2B22";
+    display: flex;
+    font-size: Var(--Hex-taille-PX);
+
+
+
+    /*
+   -webkit-transform: rotate(-30deg);
+   -moz-transform: rotate(-30deg);
+   -o-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+*/
+}

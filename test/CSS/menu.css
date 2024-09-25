@@ -1,0 +1,251 @@
+:root {
+    --Menu-min-width: 80px;
+}
+
+/*Menu Niv0*/
+.Menu-LV0 {
+    position: relative;
+    /*   background-color:black; */
+    /* box-shadow: -2px -2px 5px white,2px -2px 5px white;
+   */
+    max-height: var(--Hauteur-Head);
+    z-index: 100;
+    background-color: var(--Menu-Couleur1);
+
+}
+
+.Menu-LV0 a {
+    text-decoration: none;
+    color: black;
+}
+
+.Menu-LV0 a:visited {
+    color: black;
+}
+
+.Menu-LV0 ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.Menu-LV0>nav {
+    width: 100%;
+    display: flex;
+    max-height: var(--Hauteur-Head);
+}
+
+.Menu-LV0>nav>ul {
+    display: flex;
+    position: absolute;
+
+}
+
+.Menu-LV0>nav>ul>li {
+    line-height: var(--Hauteur-Head);
+    margin: 0 0px;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    /*   background-color:green;  */
+    max-height: var(--Hauteur-Head);
+    min-width: var(--Menu-min-width);
+}
+
+.Menu-LV0>nav>ul>li>a {
+    position: relative;
+}
+
+/*passage de la sourie*/
+.Menu-LV0>nav>ul>li:hover {
+    border-bottom: 2px solid white;
+    background-color: #0088ff;
+}
+
+.SousMenu-Lv0:hover {
+    border-bottom: none;
+}
+
+.SousMenu-Lv0:hover>.Menu-LV1 {
+    display: block;
+}
+
+
+.SousMenu-Lv1:hover {
+    border-bottom: none;
+}
+
+.SousMenu-Lv1:hover>.Menu-LV2 {
+    display: block;
+}
+
+/*Menu niveau 1*/
+.Menu-LV1 {
+    position: absolute;
+    display: none;
+    background-color: var(--Menu-Couleur1);
+    min-width: var(--Menu-min-width);
+
+}
+
+.Menu-LV1>ul>li {
+    line-height: var(--Menu-min-width);
+    margin-top: cal(var(--Menu-min-width)* -1);
+    padding-top: -100PX;
+    text-align: top;
+    /*   background-color:green;  */
+    max-height: 100PX;
+    min-width: var(--Menu-min-width);
+}
+
+.Menu-LV2 {
+    position: absolute;
+    display: none;
+    background-color: var(--Menu-Couleur2);
+    min-width: var(--Menu-min-width);
+    margin-left: var(--Menu-min-width);
+    Margin-top: -50PX;
+
+}
+
+.Menu-LV2>div>ul>li {
+    margin-top: -50PX;
+}
+
+#up_arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    background-color: var(--Menu-Couleur1);
+    transform: rotate(45deg);
+}
+
+#left_arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 100%;
+    margin-left: calc((var(--Menu-min-width)*-1) - 10PX);
+    margin-top: 4PX;
+    background-color: var(--Menu-Couleur2);
+    transform: rotate(45deg);
+}
+:root {
+  --Largeur-Nav:100PX;
+  --Hauteur-Head:60Px;
+  --Hauteur-Foot:75Px;
+  --Menu-Couleur0:#DBE1E7;
+  --Menu-Couleur1:#CAD6E4;
+  --Menu-Couleur2:#ADBDD3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#page {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template:
+      [header-left] "head head" var(--Hauteur-Head) [header-right]
+      [main-left] "Tools main" 1fr [main-right]
+      [footer-left] "Tools foot" var(--Hauteur-Foot) [footer-right]
+       / 100Px 1fr; 
+   grid-column: var(--Largeur-Nav) / 100% ;
+
+  }
+  
+  header {
+    background-color: lime;
+    grid-area: head;
+  }
+  Tools{
+    background-color: lightblue;
+    grid-area: Tools;
+  }
+  main {
+   /*  background-color: yellow; */
+    grid-area: main;
+  }
+  
+  footer {
+    background-color: red;
+    grid-column: foot;
+  }
+
+  #Dim-Grille{
+    display: block;
+    /* Border: 1px solid grey; */
+  background-color: blueviolet;
+
+  }
+  #Tools
+  {
+    display: block;
+    /* Border: 1px solid grey; */
+  background-color: rgb(103, 47, 47);
+  }
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 10px;
+  
+    text-align: center;
+    color: #010101;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+/* 
+
+ */
+ 
+/*Ruban dans Div coin suppérieur gauche*/
+
+#ribbon {
+  position:absolute;
+  background-color:red;
+  color:white;
+  top:40px;
+  right:-30px;
+  width:160px;
+  transform:rotate(45deg);
+  text-align:center;
+  z-index:99999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

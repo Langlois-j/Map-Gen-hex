@@ -1,0 +1,42 @@
+.Ocean {
+    background-color: rgb(0, 102, 204);
+}
+
+.Montagne {
+    background-color: rgb(153, 76, 0);
+}
+
+.Plaine {
+    background-color: rgb(39, 112, 16);
+    color: rgb(39, 112, 16);
+}
+
+.Foret {
+    background-color: rgb(29, 59, 20);
+}
+
+.Désert {
+    background-color: rgb(221, 190, 120);
+}
+
+.Neige {
+    background-color: rgb(244, 232, 232);
+}
+
+.Free {
+    background-color: rgb(212, 211, 211);
+}
+
+/*   .Ocean { --COULEUR:  rgb(0, 102, 204); }
+  .Montagne { --COULEUR:   rgb(153, 76, 0); }
+  .Plaine { --COULEUR:   rgb(39, 112, 16);; }
+  .Forêt { --COULEUR:  rgb(29, 59, 20); }
+  .Désert { --COULEUR:  rgb(221, 190, 120); }
+  .Neige { --COULEUR:  rgb(244, 232, 232); }
+  
+  .Free { --COULEUR:   rgb(212, 211, 211); }
+
+
+* {
+  background-color-colorlor: var(--COULEUR);
+} */

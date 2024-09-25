@@ -1,0 +1,11 @@
+#ribbon-TOP-LEFT {
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 40px;
+    right: -30px;
+    width: 160px;
+    transform: rotate(45deg);
+    text-align: center;
+    z-index: 99999;
+}
