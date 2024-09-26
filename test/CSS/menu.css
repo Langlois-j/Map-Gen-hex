@@ -131,7 +131,7 @@
     transform: rotate(45deg);
 }
 :root {
-  --Largeur-Nav:100PX;
+  --Largeur-Nav:200PX;
   --Hauteur-Head:60Px;
   --Hauteur-Foot:75Px;
   --Menu-Couleur0:#DBE1E7;
@@ -150,7 +150,7 @@
       [header-left] "head head" var(--Hauteur-Head) [header-right]
       [main-left] "Tools main" 1fr [main-right]
       [footer-left] "Tools foot" var(--Hauteur-Foot) [footer-right]
-       / 100Px 1fr; 
+       / var(--Largeur-Nav) 1fr; 
    grid-column: var(--Largeur-Nav) / 100% ;
 
   }

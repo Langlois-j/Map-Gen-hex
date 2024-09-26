@@ -7,13 +7,13 @@
     <LINK href="CSS/tile.css" rel="stylesheet" media="all" type="text/css">
     <LINK href="CSS/biomes.css" rel="stylesheet" media="all" type="text/css">
     <LINK href="CSS/ribbon.css" rel="stylesheet" media="all" type="text/css">
-    <LINK href="CSS/mapping.css" rel="stylesheet" media="all" type="text/css">
-    <script src="SCRIPT/Draw_map.js"></script>
+    
+    <script src="SCRIPT/Draw.js"></script>
     </HEAD>
 <BODY>
     <div id="page">
         <header>
-            <div id="ribbon-TOP-LEFT">Version test</div>
+            <!-- <div id="ribbon-TOP-LEFT">Version test</div> -->
             <Section style="display: flex;height:100%;" class="Menu-LV0">
                 <nav>
                     <ul>
@@ -77,47 +77,17 @@
             </Section>
         </header>
         <Tools>
-<input type="button" onclick="draw()" value="Génération de la carte">
+            <div>
+            Nombre de lignes <input id="Map_Nb_Lig" type="number" value="10">
+            Nombre de colones <input id="Map_Nb_Col" type="number" value="10">
+            </div>
+<input type="button" onclick="draw_map()" value="Génération de la carte">
+<input type="button" onclick="clear_map()" value="Clear map">
 
         </Tools>
         <main id="drawing_area">
         </main>
- 
-<!--           <section id="Draw_zone"></section>
-            <Hex-Ligne>
-            <Hex-tuile style="--R:250;--G:105;--B:0;"></Hex-tuile>
-                <Hex-tuile class="Fog"></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile> 
-            </Hex-Ligne>
-            <Hex-Ligne>
-                <Hex-tuile style="--R:250;--G:105;--B:0;"></Hex-tuile>
-                <Hex-tuile class="Fog"></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-            </Hex-Ligne>
-            <Hex-Ligne>
-                <Hex-tuile style="--R:250;--G:105;--B:0;"></Hex-tuile>
-                <Hex-tuile class="Fog"></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-                <Hex-tuile></Hex-tuile>
-            </Hex-Ligne>-->
-            <Footer></Footer>
+             <Footer></Footer>
     </div>
 </BODY>
 </HTML>
