@@ -1,6 +1,6 @@
 # ROAD-MAP
 
-- [ x ] Génération dynamique de la carte
+- [x] Génération dynamique de la carte
 - [ ] COLORISATION DES TUILES
 - [ ] Mise en place des chemin
 - [ ] mise en place du frog de guerre
