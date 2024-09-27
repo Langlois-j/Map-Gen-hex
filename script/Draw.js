@@ -1,19 +1,24 @@
+//Import des function de dépendence
+import { wolrd_map } from "script/StructurePoo.js";
+import { tile } from "script/StructurePoo.js";
+// déclaration des variables globales
 var DrawNbCol = 10;
 var DrawNbLig = 10;
-var baliseZoneDessin = "#drawing_area";
-
-/* //Import des function de dépendence
-var js = document.createElement("script");
-js.src = "ToolBox.js";
-//Ajout de la balise dans la page
-document.head.appendChild(js);*/
+let carte = new wolrd_map();
 function draw_map() {
-  clear_map();
+  var drawzonename = event.target.getAttribute("data-name");
+  var drawzonetype = event.target.getAttribute("data-balise");
+  var drawzonetag = ToolBox.TagForQuerrySelector(drawzonetype, drawzonename);
+  clear_map(drawzonetag);
   SetNbCol();
   SetNbLig();
   DrawNbCol = DrawNbCol * 2;
   DrawNbLig = DrawNbLig / 2;
-  var noeudParent = document.querySelector(baliseZoneDessin);
+  carte.Set_Ligne(DrawNbLig);
+  carte.Set_colonne(DrawNbCol);
+  carte.Create_Grid();
+  carte.ConsoleGgrid();
+  var noeudParent = document.querySelector(drawzonetag);
   draw_lig(DrawNbLig, noeudParent);
 }
 function draw_col(NbCol, noeudParent) {
@@ -32,7 +37,6 @@ function draw_lig(NbLig, noeudParent) {
 function draw_tile() {
   var noeudBalise = document.createElement("Hex-tuile");
   noeudBalise.className = random_Biome();
-  noeudBalise.style = "--HEX-taille-PX:2000px;";
   return noeudBalise;
 }
 function random_Biome() {
@@ -40,7 +44,7 @@ function random_Biome() {
   var max = 8;
   switch (Math.trunc(min + Math.random() * (max - min))) {
     case 1:
-      return "Frog";
+      return "Fog";
     case 2:
       return "Ocean";
     case 3:
@@ -65,8 +69,8 @@ function SetNbLig() {
   let baliseNom = document.getElementById("Map_Nb_Lig");
   DrawNbLig = baliseNom.value;
 }
-function clear_map() {
-  var listeNoeuds = document.querySelectorAll(baliseZoneDessin + " Hex-Ligne");
+function clear_map(drawzonetag) {
+  var listeNoeuds = document.querySelectorAll(drawzonetag + " Hex-Ligne");
   for (var i = 0; i < listeNoeuds.length; i++) {
     var noeud = listeNoeuds[i];
     var noeudParent = noeud.parentNode;

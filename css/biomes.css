@@ -10,7 +10,6 @@
     background-color: rgb(39, 112, 16);
     color: rgb(39, 112, 16);
 }
-
 .Foret {
     background-color: rgb(29, 59, 20);
 }
@@ -26,17 +25,6 @@
 .Free {
     background-color: rgb(212, 211, 211);
 }
-
-/*   .Ocean { --COULEUR:  rgb(0, 102, 204); }
-  .Montagne { --COULEUR:   rgb(153, 76, 0); }
-  .Plaine { --COULEUR:   rgb(39, 112, 16);; }
-  .Forêt { --COULEUR:  rgb(29, 59, 20); }
-  .Désert { --COULEUR:  rgb(221, 190, 120); }
-  .Neige { --COULEUR:  rgb(244, 232, 232); }
-  
-  .Free { --COULEUR:   rgb(212, 211, 211); }
-
-
-* {
-  background-color-colorlor: var(--COULEUR);
-} */
+.Fog {
+    background-color: rgba(171, 174, 176, 1);
+}

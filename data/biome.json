@@ -1,8 +1,114 @@
-{"name":
 [
-{"country":"FR","name":"plaine"},
-{"country":"EN","name":"plain"}
-],
-"color-master":"#66bb6a",
-"color-border":"#43a047"
-}
+    {
+        "ID": "B-0001",
+        "name": [
+            {
+                "country": "FR",
+                "name": "plaine"
+            },
+            {
+                "country": "EN",
+                "name": "plain"
+            }
+        ],
+        "background-color": "#66BB6A"
+    },
+    {
+        "ID": "B-0002",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Océan"
+            },
+            {
+                "country": "EN",
+                "name": ""
+            }
+        ],
+        "background-color": "#0066CC"
+    },
+    {
+        "ID": "B-0003",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Montagne"
+            },
+            {
+                "country": "EN",
+                "name": ""
+            }
+        ],
+        "background-color": "#994C00"
+    },
+    {
+        "ID": "B-0004",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Foret"
+            },
+            {
+                "country": "EN",
+                "name": ""
+            }
+        ],
+        "background-color": "#1D3B14"
+    },
+    {
+        "ID": "B-0005",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Désert"
+            },
+            {
+                "country": "EN",
+                "name": ""
+            }
+        ],
+        "background-color": "#DDBE78"
+    },
+    {
+        "ID": "B-0006",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Neige"
+            },
+            {
+                "country": "EN",
+                "name": ""
+            }
+        ],
+        "background-color": "#E0E8E8"
+    },
+    {
+        "ID": "B-0007",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Libre"
+            },
+            {
+                "country": "EN",
+                "name": "Free"
+            }
+        ],
+        "background-color": "#D4D3D3"
+    },
+    {
+        "ID": "B-0008",
+        "name": [
+            {
+                "country": "FR",
+                "name": "Brouillard"
+            },
+            {
+                "country": "EN",
+                "name": "Fog"
+            }
+        ],
+        "background-color": "#ABAEB0"
+    }
+]
