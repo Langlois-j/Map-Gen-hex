@@ -48,3 +48,8 @@
 - [ ] Analyse du nombre de bruit nécéssaire pour une génération simple
 
 # IDEE
+menu réductible 
+menu amovible 
+rose des vents
+modification de la couleur du cadre de la tuile
+regarder un jeu de dame en js
