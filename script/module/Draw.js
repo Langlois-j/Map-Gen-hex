@@ -15,8 +15,8 @@ function draw_map() {
   SetNbLig();
   DrawNbCol = DrawNbCol * 2;
   DrawNbLig = DrawNbLig / 2;
-  carte.Set_Ligne(DrawNbLig);
-  carte.Set_colonne(DrawNbCol);
+  /*   carte.Set_Ligne(DrawNbLig);
+  carte.Set_colonne(DrawNbCol); */
   carte.Create_Grid();
   carte.ConsoleGgrid();
   var noeudParent = document.querySelector(drawzonetag);
