@@ -1,15 +1,15 @@
 //Import des function de dépendence
-import { wolrd_map } from "script/module/StructurePoo.js";
-import { tile } from "script/module/StructurePoo.js";
+/* import { wolrd_map } from "script/module/StructurePoo.js";
+import { tile } from "script/module/StructurePoo.js"; */
 // déclaration des variables globales
 var DrawNbCol = 10;
 var DrawNbLig = 10;
-let carte = new wolrd_map();
+//let carte = new wolrd_map();
 
 function draw_map() {
   var drawzonename = event.target.getAttribute("data-name");
   var drawzonetype = event.target.getAttribute("data-balise");
-  var drawzonetag = ToolBox.TagForQuerrySelector(drawzonetype, drawzonename);
+  var drawzonetag = TagForQuerrySelector(drawzonetype, drawzonename);
   clear_map(drawzonetag);
   SetNbCol();
   SetNbLig();
@@ -76,5 +76,14 @@ function clear_map(drawzonetag) {
     var noeud = listeNoeuds[i];
     var noeudParent = noeud.parentNode;
     var noeudLibre = noeudParent.removeChild(noeud);
+  }
+}
+function TagForQuerrySelector(typeBalise, valeurBalise) {
+  switch (typeBalise) {
+    case "id":
+      return "#" + valeurBalise;
+    default:
+      console.log(`Sorry, we are out of ${typeBalise}.`);
+      return null;
   }
 }
